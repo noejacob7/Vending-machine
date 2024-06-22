@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="812.0" prefWidth="375.0" style="-fx-background-color: rgb(108,98,128);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scrum.a2.controllers.ChangeController">
+    <children>
+        <Text fill="WHITE" layoutX="58.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-font-size: 45px;" styleClass="title" text="Summary !" textAlignment="CENTER" wrappingWidth="267.0">
+            <font>
+                <Font name="Modak" size="38.0" />
+            </font>
+        </Text>
+      <Group layoutX="-11.0" layoutY="67.0">
+         <children>
+            <Group layoutX="10.0" layoutY="316.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#282f4080" height="55.0" layoutX="2.0" layoutY="-44.0" stroke="#838ac3" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" style="-fx-stroke-type: INSIDE none INSIDE none;" width="375.0" />
+                  <ImageView layoutX="24.0" layoutY="-41.0">
+                     <image>
+                        <Image url="@images/Coin.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="100.0" layoutY="-40.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Coins : $ 2" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="two" layoutX="100.0" layoutY="-17.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Quantity : 0" textFill="WHITE" />
+                  <Label fx:id="totaltwo" layoutX="246.0" layoutY="-25.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Total : $ 0.00" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group layoutX="12.0" layoutY="377.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#282f4080" height="55.0" layoutY="-48.0" stroke="#838ac3" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" style="-fx-stroke-type: INSIDE none INSIDE none;" width="375.0" />
+                  <ImageView layoutX="24.0" layoutY="-45.0">
+                     <image>
+                        <Image url="@images/Coin.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="100.0" layoutY="-42.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Coins : $ 1" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="one" layoutX="100.0" layoutY="-19.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Quantity : 0" textFill="WHITE" />
+                  <Label fx:id="totalone" layoutX="246.0" layoutY="-27.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Total : $ 0.00" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group layoutX="12.0" layoutY="62.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#282f4080" height="55.0" layoutY="-18.0" stroke="#838ac3" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" style="-fx-stroke-type: INSIDE none INSIDE none;" width="375.0" />
+                  <Label layoutX="100.0" layoutY="-12.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Notes : $ 50" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="fifty" layoutX="100.0" layoutY="10.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Quantity : 0" textFill="WHITE" />
+                  <Label fx:id="fiftytotal" layoutX="246.0" layoutY="5.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Total : $ 0.00" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="18.0" layoutY="-34.0">
+                     <image>
+                        <Image url="@images/Dollar%20Note.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="12.0" layoutY="-2.0" />
+            <Group layoutX="12.0" layoutY="125.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#282f4080" height="55.0" layoutY="-24.0" stroke="#838ac3" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" style="-fx-stroke-type: INSIDE none INSIDE none;" width="375.0" />
+                  <Label layoutX="101.0" layoutY="-16.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Notes : $ 20" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="twenty" layoutX="100.0" layoutY="7.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Quantity : 0" textFill="WHITE" />
+                  <Label fx:id="totaltwenty" layoutX="246.0" layoutY="-1.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Total : $ 0.00" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="20.0" layoutY="-41.0">
+                     <image>
+                        <Image url="@images/Dollar%20Note.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="12.0" layoutY="184.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#282f4080" height="55.0" layoutY="-26.0" stroke="#838ac3" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" style="-fx-stroke-type: INSIDE none INSIDE none;" width="375.0" />
+                  <Label layoutX="100.0" layoutY="-19.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Notes : $ 10" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ten" layoutX="100.0" layoutY="4.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Quantity : 0" textFill="WHITE" />
+                  <Label fx:id="totalten" layoutX="246.0" layoutY="-4.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Total : $ 0.00" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="20.0" layoutY="-43.0">
+                     <image>
+                        <Image url="@images/Dollar%20Note.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="11.0" layoutY="444.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#282f4080" height="55.0" layoutY="-58.0" stroke="#838ac3" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" style="-fx-stroke-type: INSIDE none INSIDE none;" width="375.0" />
+                  <ImageView layoutX="24.0" layoutY="-54.0">
+                     <image>
+                        <Image url="@images/Coin.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="100.0" layoutY="-51.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Coins : 50c" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="fiftyc" layoutX="100.0" layoutY="-28.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Quantity : 0" textFill="WHITE" />
+                  <Label fx:id="totalfiftyc" layoutX="246.0" layoutY="-36.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Total : $ 0.00" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group layoutX="12.0" layoutY="504.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#282f4080" height="55.0" layoutY="-61.0" stroke="#838ac3" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" style="-fx-stroke-type: INSIDE none INSIDE none;" width="375.0" />
+                  <ImageView layoutX="24.0" layoutY="-58.0">
+                     <image>
+                        <Image url="@images/Coin.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="100.0" layoutY="-55.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Coins : 20c" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="twentyc" layoutX="100.0" layoutY="-32.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Quantity : 0" textFill="WHITE" />
+                  <Label fx:id="totaltwentyc" layoutX="246.0" layoutY="-40.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Total : $ 0.00" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group layoutX="12.0" layoutY="251.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#282f4080" height="55.0" layoutY="-36.0" stroke="#838ac3" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" style="-fx-stroke-type: INSIDE none INSIDE none;" width="375.0" />
+                  <Label layoutX="100.0" layoutY="-29.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Notes : $ 5" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="five" layoutX="100.0" layoutY="-6.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Quantity : 0" textFill="WHITE" />
+                  <Label fx:id="totalfive" layoutX="246.0" layoutY="-14.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Total : $ 0.00" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="20.0" layoutY="-53.0">
+                     <image>
+                        <Image url="@images/Dollar%20Note.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="12.0" layoutY="568.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#282f4080" height="55.0" layoutY="-68.0" stroke="#838ac3" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" style="-fx-stroke-type: INSIDE none INSIDE none;" width="375.0" />
+                  <ImageView layoutX="24.0" layoutY="-66.0">
+                     <image>
+                        <Image url="@images/Coin.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="100.0" layoutY="-63.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Coins : 10c" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tenc" layoutX="100.0" layoutY="-40.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Quantity : 0" textFill="WHITE" />
+                  <Label fx:id="totaltenc" layoutX="246.0" layoutY="-48.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Total : $ 0.00" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group layoutX="11.0" layoutY="631.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#282f4080" height="55.0" layoutY="-74.0" stroke="#838ac3" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" style="-fx-stroke-type: INSIDE none INSIDE none;" width="375.0" />
+                  <ImageView layoutX="24.0" layoutY="-72.0">
+                     <image>
+                        <Image url="@images/Coin.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="100.0" layoutY="-69.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Coins : 5c" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="fivec" layoutX="100.0" layoutY="-46.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Quantity : 0" textFill="WHITE" />
+                  <Label fx:id="totalfivec" layoutX="246.0" layoutY="-54.0" prefHeight="24.0" prefWidth="115.0" styleClass="text" stylesheets="@css/font1.css" text="Total : $ 0.00" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <Text fx:id="totalChange" fill="#f5f5f5" layoutX="14.0" layoutY="788.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Total Change        :  $ 0.00" wrappingWidth="217.4453125">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+      </Text>
+      
+       <Button layoutX="207.0" layoutY="742.0" minHeight="45.0" minWidth="150.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="45.0" prefWidth="160.0" style="-fx-background-radius: 40; -fx-background-color: #AEBFE2; -fx-font-family: Impact;" text="Continue" textFill="WHITE">
+            <font>
+                <Font name="Impact" size="20.0" />
+            </font>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color red="0.27960526943206787" green="0.31030702590942383" blue="0.3947368562221527" />
+                    </color>
+                </InnerShadow>
+            </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </Button>
+      <Text fx:id="amount" fill="#f5f5f5" layoutX="14.0" layoutY="752.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Amount Entered   :  $ 0.00" wrappingWidth="195.4453125">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalPrice" fill="#f5f5f5" layoutX="14.0" layoutY="771.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Total Price              :  $ 0.00" wrappingWidth="195.4453125">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="errorMessage" fill="#f5f5f5" layoutX="200.0" layoutY="733.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" wrappingWidth="160.0">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+      </Text>
+    </children>
+    <cursor>
+        <Cursor fx:constant="MOVE" />
+    </cursor>
+   <stylesheets>
+      <URL value="@css/font.css" />
+      <URL value="@css/font1.css" />
+   </stylesheets>
+</Pane>

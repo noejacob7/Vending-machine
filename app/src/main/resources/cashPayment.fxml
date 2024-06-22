@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SpinnerValueFactory.IntegerSpinnerValueFactory?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="812.0" prefWidth="375.0" style="-fx-background-color: rgb(108,98,128);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scrum.a2.controllers.cashPaymentController">
+    <children>
+        <Text fill="WHITE" layoutX="31.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Payment Method" textAlignment="CENTER" wrappingWidth="330.4453125">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Text>
+        <Region layoutX="2.0" layoutY="97.0" prefHeight="597.0" prefWidth="375.0" style="-fx-border-width: 10 0 10 0; -fx-border-color: rgb(131,138,195); -fx-border-radius: 69;" />
+        <Rectangle arcHeight="100.0" arcWidth="100.0" fill="#eae5f5" height="579.0" layoutX="1.0" layoutY="106.0" stroke="#838ac3" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" style="-fx-stroke-type: INSIDE none INSIDE none;" width="375.0" />
+      <Group layoutX="10.0" layoutY="180.0" onMouseClicked="#cash">
+         <children>
+            <Button layoutX="4.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#cash" prefHeight="83.0" prefWidth="147.0" style="-fx-background-radius: 20; -fx-background-color: white; -fx-border-color: rgb(131,138,195) rgb(131,138,195); -fx-border-width: 4; -fx-border-radius: 20;" styleClass="text" stylesheets="@css/font1.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView layoutX="19.0" layoutY="16.0" onMouseClicked="#cash">
+               <image>
+                  <Image url="@images/Vector%20(1).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="22.0" layoutY="59.0" onMouseClicked="#cash" prefHeight="16.0" prefWidth="51.0" styleClass="text" text="Cash" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Group>
+      <Group fx:id="cashPane" layoutX="-7.0" layoutY="277.0">
+         <children>
+            <Pane layoutX="9.0" prefHeight="402.0" prefWidth="375.0">
+               <children>
+                  <Group layoutX="23.0" layoutY="140.0">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="19.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Coin.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="-5.0" layoutY="49.0" prefHeight="19.0" prefWidth="48.0" styleClass="text" text="\$ 2" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="two" layoutX="45.0" layoutY="45.0" onMouseClicked="#updateAmount" prefHeight="26.0" prefWidth="61.0">
+                           <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory max="100" min="0" />
+                        </valueFactory>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Spinner>
+                     </children>
+                  </Group>
+                  <Group layoutX="269.0" layoutY="37.0">
+                     <children>
+                        <ImageView fitHeight="83.0" fitWidth="74.0" layoutX="2.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Dollar%20Note.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" layoutX="-8.0" layoutY="75.0" prefHeight="19.0" prefWidth="48.0" styleClass="text" text="\$ 5">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="five" layoutX="42.0" layoutY="72.0" onMouseClicked="#updateAmount" prefHeight="26.0" prefWidth="61.0">
+                           <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory max="100" min="0" />
+                        </valueFactory>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Spinner>
+                     </children>
+                  </Group>
+                  <Group layoutX="183.0" layoutY="37.0">
+                     <children>
+                        <ImageView fitHeight="83.0" fitWidth="74.0" layoutX="2.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Dollar%20Note.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" layoutX="-8.0" layoutY="75.0" prefHeight="19.0" prefWidth="48.0" styleClass="text" text="\$ 10">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="ten" layoutX="42.0" layoutY="72.0" onMouseClicked="#updateAmount" prefHeight="26.0" prefWidth="61.0">
+                           <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory max="100" min="0" />
+                        </valueFactory>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Spinner>
+                     </children>
+                  </Group>
+                  <Group layoutX="27.0" layoutY="-14.0" />
+                  <Group layoutX="93.0" layoutY="39.0">
+                     <children>
+                        <ImageView fitHeight="83.0" fitWidth="74.0" layoutX="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Dollar%20Note.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" layoutX="-9.0" layoutY="75.0" prefHeight="19.0" prefWidth="48.0" styleClass="text" text="\$ 20">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="twenty" layoutX="42.0" layoutY="72.0" onMouseClicked="#updateAmount" prefHeight="26.0" prefWidth="57.0">
+                           <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory max="100" min="0" />
+                        </valueFactory>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Spinner>
+                     </children>
+                  </Group>
+                  <Group layoutY="37.0">
+                     <children>
+                        <ImageView fitHeight="83.0" fitWidth="74.0" layoutX="2.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Dollar%20Note.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" layoutX="-9.0" layoutY="75.0" prefHeight="19.0" prefWidth="48.0" styleClass="text" text="\$ 50">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="fifty" layoutX="42.0" layoutY="72.0" onMouseClicked="#updateAmount" prefHeight="26.0" prefWidth="57.0">
+                           <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory max="100" min="0" />
+                        </valueFactory>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Spinner>
+                     </children>
+                  </Group>
+                  <Group layoutX="138.0" layoutY="140.0">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="19.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Coin.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="-8.0" layoutY="50.0" prefHeight="19.0" prefWidth="48.0" styleClass="text" text="\$ 1" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="one" layoutX="46.0" layoutY="46.0" onMouseClicked="#updateAmount" prefHeight="26.0" prefWidth="61.0">
+                           <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory max="100" min="0" />
+                        </valueFactory>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Spinner>
+                     </children>
+                  </Group>
+                  <Group layoutX="248.0" layoutY="140.0">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="19.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Coin.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="-3.0" layoutY="50.0" prefHeight="19.0" prefWidth="44.0" styleClass="text" text="50c" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="fiftyc" layoutX="46.0" layoutY="46.0" onMouseClicked="#updateAmount" prefHeight="26.0" prefWidth="61.0">
+                           <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory max="100" min="0" />
+                        </valueFactory>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Spinner>
+                     </children>
+                  </Group>
+                  <Group layoutX="246.0" layoutY="211.0">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="19.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Coin.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="-8.0" layoutY="49.0" prefHeight="19.0" prefWidth="48.0" styleClass="text" text="5c" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="fivec" layoutX="45.0" layoutY="45.0" onMouseClicked="#updateAmount" prefHeight="26.0" prefWidth="61.0">
+                           <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory max="100" min="0" />
+                        </valueFactory>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Spinner>
+                     </children>
+                  </Group>
+                  <Group layoutX="21.0" layoutY="211.0">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="19.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Coin.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="-5.0" layoutY="49.0" prefHeight="19.0" prefWidth="48.0" styleClass="text" text="20c" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="twentyc" layoutX="45.0" layoutY="45.0" onMouseClicked="#updateAmount" prefHeight="26.0" prefWidth="61.0">
+                           <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory max="100" min="0" />
+                        </valueFactory>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Spinner>
+                     </children>
+                  </Group>
+                  <Group layoutX="139.0" layoutY="211.0">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="19.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Coin.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="-5.0" layoutY="49.0" prefHeight="19.0" prefWidth="48.0" styleClass="text" text="10c" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="tenc" layoutX="45.0" layoutY="45.0" onMouseClicked="#updateAmount" prefHeight="26.0" prefWidth="61.0">
+                           <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory max="100" min="0" />
+                        </valueFactory>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Spinner>
+                     </children>
+                  </Group>
+                  <Text fx:id="amount" fill="#d88484" layoutX="180.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Amount Entered : $ 0.00" textAlignment="RIGHT" wrappingWidth="187.54397583007812">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="errorMessage" fill="#d88484" layoutX="30.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" textAlignment="RIGHT" wrappingWidth="337.5439758300781">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Group>
+      <Text fill="#838ac3" layoutX="24.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: rgb(131,138,195);" styleClass="text" text="Payment Options" wrappingWidth="306.4453125">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalPrice" fill="#f5f5f5" layoutX="10.0" layoutY="772.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Price :  $ 0.00" wrappingWidth="134.4453125">
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font>
+      </Text>
+       <Button layoutX="163.0" layoutY="742.0" minHeight="45.0" minWidth="150.0" mnemonicParsing="false" onAction="#completePayment" prefHeight="45.0" prefWidth="204.0" style="-fx-background-radius: 40; -fx-background-color: #AEBFE2; -fx-font-family: impact;" text="Complete Payment" textFill="WHITE">
+          <font>
+             <Font name="Impact" size="16.0" />
+          </font>
+          <effect>
+             <InnerShadow blurType="ONE_PASS_BOX" />
+          </effect>
+          <cursor>
+             <Cursor fx:constant="HAND" />
+          </cursor>
+       </Button>
+      <ImageView fitHeight="48.0" fitWidth="52.0" layoutX="5.0" layoutY="5.0" onMouseClicked="#back">
+         <image>
+            <Image url="@images/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Group layoutX="195.0" layoutY="180.0" onMouseClicked="#credit">
+         <children>
+            <Button layoutX="3.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#credit" prefHeight="83.0" prefWidth="147.0" style="-fx-background-radius: 20; -fx-background-color: rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195); -fx-border-radius: 20;" styleClass="text" stylesheets="@css/font1.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="20.0" layoutY="59.0" onMouseClicked="#credit" prefHeight="16.0" prefWidth="51.0" style="-fx-text-fill: white;" styleClass="text" text="Card" />
+            <ImageView layoutX="9.0" layoutY="3.0" onMouseClicked="#credit">
+               <image>
+                  <Image url="@images/white_credit.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Group>
+      <Group fx:id="creditPane" layoutX="3.0" layoutY="287.0" visible="false">
+         <children>
+            <Pane layoutX="-3.0" layoutY="-7.0" prefHeight="402.0" prefWidth="375.0">
+               <children>
+                  <Text fx:id="creditCardMessage" fill="#d88484" layoutX="38.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" textAlignment="RIGHT" wrappingWidth="324.01125558778597">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="creditCardName" layoutX="25.0" layoutY="88.0" minHeight="50.0" minWidth="330.0" style="-fx-background-radius: 30px; -fx-text-fill: rgb(131,138,195);" styleClass="text">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <PasswordField fx:id="creditCardPass" layoutX="25.0" layoutY="187.0" minHeight="50.0" minWidth="330.0" style="-fx-background-radius: 30px; -fx-text-fill: rgb(131,138,195);" styleClass="text">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </PasswordField>
+                  <Label layoutX="37.0" layoutY="59.0" prefHeight="17.0" prefWidth="202.0" style="-fx-text-fill: rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195); -fx-font-size: 15px;" styleClass="text" text="Enter credit card name :" />
+                  <Label layoutX="38.0" layoutY="157.0" prefHeight="26.0" prefWidth="244.0" style="-fx-text-fill: rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195); -fx-font-size: 15px;" styleClass="text" text="Enter credit card password :" />
+                  <!-- <Label layoutX="37.0" layoutY="59.0" prefHeight="17.0" prefWidth="202.0" style="-fx-text-fill: rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195); -fx-font-size: 15px;" styleClass="text" text="Enter credit card name :" /> -->
+                  <!-- <Label layoutX="38.0" layoutY="157.0" prefHeight="26.0" prefWidth="244.0" style="-fx-text-fill: rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195) rgb(131,138,195); -fx-font-size: 15px;" styleClass="text" text="Enter credit card number :" /> -->
+                  <CheckBox fx:id="isCreditSave" layoutX="37.0" layoutY="250.0" mnemonicParsing="false" styleClass="text" text="Do you want to save your credit card details ?" />
+               </children>
+            </Pane>
+         </children>
+      </Group>
+      <ImageView fitHeight="38.0" fitWidth="33.0" layoutX="339.0" layoutY="3.0" onMouseClicked="#logout">
+         <image>
+            <Image url="@images/logout.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Group fx:id="cancelTransaction" layoutX="75.0" layoutY="156.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8a89ae" height="148.0" layoutX="-3.0" layoutY="133.0" stroke="BLACK" strokeType="INSIDE" width="234.0" />
+            <Button layoutX="22.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#tryAgain" style="-fx-background-color: WHITE; -fx-background-radius: 20px;" text="TRY AGAIN">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="130.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#cancelTransact" style="-fx-background-color: WHITE; -fx-background-radius: 20px;" text="CANCEL">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fx:id="errorMessage1" fill="WHITE" layoutX="8.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Would you like to cancel transaction ?" wrappingWidth="223.09854125976562">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+    </children>
+    <cursor>
+        <Cursor fx:constant="MOVE" />
+    </cursor>
+   <stylesheets>
+      <URL value="@css/font.css" />
+      <URL value="@css/font1.css" />
+   </stylesheets>
+
+</Pane>

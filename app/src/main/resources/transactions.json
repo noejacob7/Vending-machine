@@ -1,0 +1,37 @@
+{
+  "anonymous": [{
+    "itemsSold":  [["1014", 3], ["1004", 1], ["1005", 1], ["1009", 1]],
+    "date": "2022-10-24T19:51:31.023421+11:00[Australia/Sydney]",
+    "amountPaid": "15",
+    "returnedChange": "3",
+    "paymentMethod": "Cash"
+  }],
+  "njac5013": [{
+    "itemsSold":  [["1014", 3], ["1004", 1], ["1005", 1], ["1009", 1]],
+    "date": "2022-10-24T19:51:31.023421+11:00[Australia/Sydney]",
+    "amountPaid": "15",
+    "returnedChange": "3",
+    "paymentMethod": "Cash"
+  }],
+  "vsal9051": [{
+    "itemsSold":  [["1014", 3], ["1004", 1], ["1005", 1], ["1009", 1]],
+    "date": "2022-10-24T19:51:31.023421+11:00[Australia/Sydney]",
+    "amountPaid": "15",
+    "returnedChange": "3",
+    "paymentMethod": "Cash"
+  }],
+  "kkon7719": [{
+      "itemsSold":  [["1014", 3], ["1004", 1], ["1005", 1], ["1009", 1]],
+      "date": "2022-10-24T19:51:31.023421+11:00[Australia/Sydney]",
+      "amountPaid": "15",
+      "returnedChange": "3",
+      "paymentMethod": "Cash"
+  }],
+  "shng6444": [{
+      "itemsSold":  [["1014", 3], ["1004", 1], ["1005", 1], ["1009", 1]],
+      "date": "2022-10-24T19:51:31.023421+11:00[Australia/Sydney]",
+      "amountPaid": "15",
+      "returnedChange": "3",
+      "paymentMethod": "Cash"
+  }]
+}

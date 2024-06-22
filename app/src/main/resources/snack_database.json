@@ -1,0 +1,18 @@
+{
+    "1001": ["Mineral Water", 1.00, 7, "Drinks"],
+    "1002": ["Sprite",2.50,  7, "Drinks"],
+    "1003": ["Coca cola", 2.50, 7, "Drinks"],
+    "1004": ["Pepsi", 2.50, 7, "Drinks"],
+    "1005": ["Juice", 2.50, 7, "Drinks"],
+    "1006": ["Mars", 2.00, 7, "Chocolates"],
+    "1007": ["M&M", 2.00, 7, "Chocolates"],
+    "1008": ["Bounty", 3.00, 7, "Chocolates"],
+    "1009": ["Snickers", 2.50, 7, "Chocolates"],
+    "1010": ["Smiths", 3.00, 7, "Chips"],
+    "1011": ["Pringles", 4.50, 7, "Chips"],
+    "1012": ["Kettle", 3.50, 7, "Chips"],
+    "1013": ["Thins", 2.50, 7, "Chips"],
+    "1014":  ["Mentos", 1.50, 7, "Candies"],
+    "1015":  ["Sour Patch", 1.50, 7, "Candies"],
+    "1016":  ["Skittles", 1.00, 7, "Candies"]
+} 

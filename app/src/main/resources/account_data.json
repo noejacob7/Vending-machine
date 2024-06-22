@@ -1,0 +1,45 @@
+{
+  "njac5013": {
+    "password": "1234",
+    "name": "Noe",
+    "number": "5013",
+    "role": "CUSTOMER"
+  },
+  "vsal9051": {
+    "password": "1234",
+    "name": "Vitto",
+    "number": "9051",
+    "role": "CUSTOMER"
+},
+  "kkon7719": {
+    "password": "1234",
+    "name": "Katrina",
+    "number": "7719",
+    "role": "CUSTOMER"
+  },
+  "shng6444": {
+    "password": "1234",
+    "name": "Shing",
+    "number": "6444",
+    "role": "CUSTOMER"
+  },
+  "owner1": {
+    "password": "1234",
+    "name": "Owner1",
+    "number": "9969",
+    "role": "OWNER"
+  },
+  "cashier1": {
+    "password": "1234",
+    "name": "cashier1",
+    "number": "9971",
+    "role": "CASHIER"
+  },
+  "seller1": {
+    "password": "1234",
+    "name": "seller1",
+    "number": "9970",
+    "role": "SELLER"
+  }
+  
+}
